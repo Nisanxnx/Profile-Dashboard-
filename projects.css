@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6dd5fa, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #6dd5fa, 0 0 20px #ff7eb3;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 25px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px #6dd5fa, 0 0 50px #ff7eb3;
+}
+
+/* Project Card Text */
+.project-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffeb3b;
+    text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ff9800;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #cce7ff;
+    line-height: 1.5;
+}
+
+/* Project Button */
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6dd5fa, #ff7eb3);
+    background-size: 200% 200%;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 10px #6dd5fa, 0 0 10px #ff7eb3;
+    transition: 0.3s;
+    animation: gradientButton 3s ease infinite;
+}
+
+.project-card a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 35px #6dd5fa, 0 0 50px #ff7eb3;
+}
+
+@keyframes gradientButton {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
