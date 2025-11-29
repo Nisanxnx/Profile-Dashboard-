@@ -1,3 +1,24 @@
+# age dekhe nin screenshot 
+
+
+# profile ss 1
+
+<p align="center">
+		<img align="center" alt="PNG" src="https://i.imgur.com/RT2978S.jpeg"/>
+<h1 align='center'>
+
+# profile ss 2
+
+<p align="center">
+		<img align="center" alt="PNG" src="https://i.imgur.com/29nFPmu.jpeg"/>
+<h1 align='center'>
+
+# profile ss 3
+
+<p align="center">
+		<img align="center" alt="PNG" src="https://i.imgur.com/6G1iXsC.jpeg"/>
+<h1 align='center'>
+  
 # How to Host Your Website on InfinityFree (Step by Step)
 
 This guide will help you host your profile/portfolio website on InfinityFree for free.  
