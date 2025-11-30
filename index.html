@@ -8,11 +8,38 @@
 </head>
 <body>
 
+<!-- Background Music (your file) -->
+<audio id="bgMusic" autoplay loop>
+  <source src="https://files.catbox.moe/a2wvm8.mp4" type="audio/mp4">
+</audio>
+
+<script>
+// Autoplay attempt (most browsers block without user gesture)
+const music = document.getElementById('bgMusic');
+
+document.addEventListener("DOMContentLoaded", () => {
+    const playPromise = music.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            console.log("Autoplay blocked. Will play on click.");
+        });
+    }
+});
+
+// Fallback → play when user taps anywhere
+window.addEventListener('click', () => {
+    music.play();
+}, { once: true });
+
+</script>
+
 <div class="profile-card">
     <div class="profile-image-wrapper">
         <img src="https://i.imgur.com/ObuWyS9.jpeg" alt="Profile" class="profile-image">
     </div>
+
     <h1>—͟͞͞ɴiនꫝɴ ✘ Ꭼᴅɪᴛᴢ ⸙</h1>
+
     <p>⎯⃝🌻🪽½ ⎯͢⎯⃝😽 আমার জীবনে যোগ বিয়োগের বালাই নাই, আমি হিসাব করি না, হিসেব রাখি না! তার জন্য সমালোচকরা তো রয়েছেই <♡🩷🪽 ⎯͢⎯⃝๓เ๓🌻🪽½</p>
 
     <div class="buttons">
@@ -43,17 +70,4 @@
 </div>
 
 </body>
-<body>
-
-<!-- Background music -->
-<audio id="bgMusic" autoplay loop>
-  <source src="https://files.catbox.moe/a2wvm8.mp4" type="audio/mpeg">
-</audio>
-
-<script>
-const music = document.getElementById('bgMusic');
-window.addEventListener('click', () => { music.play(); }, { once: true });
-</script>
-
-</body>
-          </html>
+</html>
